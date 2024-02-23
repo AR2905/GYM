@@ -1255,7 +1255,18 @@ html.loading, body.loading {
   display: none;
 }
 
-::-webkit-scrollbar{
+/* Hide scrollbar when loading overlay is displayed */
+.loading-overlay {
+  overflow: hidden;
+}
+
+/* Show scrollbar when loading overlay is not displayed */
+.loaded .loading-overlay {
+  overflow: auto;
+}
+
+/* Customize scrollbar */
+::-webkit-scrollbar {
   width: 8px;
 }
 
@@ -1267,7 +1278,6 @@ html.loading, body.loading {
 ::-webkit-scrollbar-thumb {
   background: #a20000; 
   border-radius: 8px;
-
 }
 
 /* Handle on hover */
