@@ -1254,3 +1254,23 @@ html.loading, body.loading {
 .loaded .loading-overlay {
   display: none;
 }
+
+::-webkit-scrollbar{
+  width: 8px;
+}
+
+::-webkit-scrollbar-track { 
+  background-color : transparent;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #a20000; 
+  border-radius: 8px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f00; 
+}
